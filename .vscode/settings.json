@@ -17,5 +17,7 @@
         "**/.git/objects/**": true
     },
     "notebook.lineNumbers": "on",
-    "notebook.showCellStatusBar": "visible"
+    "notebook.showCellStatusBar": "visible",
+    "workbench.editor.restoreViewState": true,
+    "files.restoreViewState": true
 }

@@ -25,6 +25,8 @@
             }
         }
     },
+    "initializeCommand": "mkdir -p /tmp/vscode_init",
     "postCreateCommand": "pip install --upgrade pip && pip install vnstock pandas plotly",
+    "postStartCommand": "bash .devcontainer/open-notebooks.sh",
     "remoteUser": "vscode"
 }
