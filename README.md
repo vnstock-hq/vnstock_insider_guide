@@ -5,69 +5,29 @@
 
 > Hiện tại, bạn có thể cài đặt các gói phần mềm dành riêng cho thành viên thông qua file cài đặt tiện lợi và đây là cách cài đặt chính thức được hướng dẫn. Chi tiết cách cài đặt trên từng nền tảng máy tính và dịch vụ.
 
-## Tải file cài đặt
+**Đối với Github Codespace**
 
-Trước tiên, chọn file cài đặt tương ứng với hệ điều hành/dịch vụ mà mình sử dụng từ thư mục [oneclick_install](https://github.com/vnstock-hq/vnstock_insider_kickstart/tree/main/oneclick_installer) để tải về. 
+1. Mở Notebook với nút <a href="https://codespaces.new/vnstock-hq/vnstock_insider_guide" target="_blank" style="display:inline-block; vertical-align:middle;"><img src="https://img.shields.io/badge/Open%20in-GitHub%20Codespaces-blue?logo=github" alt="Open in GitHub Codespaces" style="height:20px; vertical-align:middle;"></a>
 
-<details>
-    <summary>Xem hướng dẫn</summary>
+2. Tạo Codespace mới để thử nghiệm Notebook Minh hoạ
 
-![alt text](assets/images/oneclick_setup_download.gif)
-</details>
+![](http://vnstocks.com/images/vnstock-guide-github-codespace.png)
 
-<br>
+3. Mở Terminal bằng phím tắt Ctrl + ` (phím backtick dưới phím Esc) sau đó nhập các dòng lệnh bên dưới vào
 
-Nếu bạn sử dụng Google Colab, clone toàn bộ repo bằng lệnh để sử dụng là cách tiện lợi nhất vì Google Colab có sẵn phần mềm Git.
+**Đối với Google Colab**
 
-```shell
-!git clone https://github.com/vnstock-hq/vnstock_insider_guide
-```
-(*) Lưu ý: Dấu `!` trước câu lệnh cần phải có cho môi trường Colab hoặc Jupyter Notebook để chương trình hiểu lệnh này chạy với Terminal của hệ điều hành chứ không phải lệnh python.
+Chạy ô lệnh bên dưới tại Notebook minh hoạ này trên dịch vụ [Google Colab](https://colab.research.google.com/)
 
-## Google Colab / Linux
 
-Mở link Notebook Colab mẫu tại đây:
-
-<a target="_blank" href="https://colab.research.google.com/github/vnstock-hq/vnstock_insider_guide/blob/main/assets/Vnstock_Insider_Package_Setup_Colab.ipynb">
-<img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a>
-
-![](assets/images/google_colab_oneclick_setup.png)
-
-![Cài đặt với Colab](./assets/images/google_colab_setup.png)
-
-## macOS
-
-> Sau khi tải file cài đặt về máy, mặc định được lưu trong thư mục `Downloads`. 
-
-Bạn cần mở ứng dụng Terminal trên máy tính Mac thông qua Launchpad hoặc sử dụng tổ hợp phím tắt `Cmd` + `Space` sau đó nhập `Terminal` để tìm kiếm, chọn và Enter. Tiếp tục quá trình cài đặt với các bước dưới đây.
-
-Chi tiết tại video: https://youtu.be/nBCZzXjUgoA
-
-1. Mở thư mục `Downloads` là thư mục lưu file cài đặt mà bạn tải về từ trình duyệt web bằng câu lệnh:
-
-```shell
-
-cd Downloads
-
+```bash
+# Tải file về và lưu với tên vnstock-cli-installer.run
+wget https://vnstocks.com/files/vnstock-cli-installer.run
+# Phân quyền và chạy cài đặt
+chmod +x vnstock-cli-installer.run
+./vnstock-cli-installer.run
 ```
 
-2. Trao quyền thực thi cho file `oneclick_python_vnstock3_macos.sh` để hệ thống có thể hiểu đây là file cài đặt phần mềm
-
-```shell
-
-chmod +x oneclick_python_vnstock3_macos.sh
-
-```
-
-3. Chạy file cài đặt
-
-```shell
-
-./oneclick_python_vnstock3_macos.sh
-
-```
-## Windows
-
-> Trong thời gian cập nhật file cài đặt, các bạn sẽ sử dụng cách cài đặt hướng dẫn trong từng gói phần mềm với access token.
-
+**⚡ Lựa chọn nền tảng:**
+- **GitHub Codespaces** (Khuyến nghị): Môi trường đầy đủ, không cần cài đặt Python phức tạp và không bị chặn IP từ nguồn VCI.
+- **Google Colab**: Miễn phí với hỗ trợ lưu trữ trong Google Drive. Hiện tại đang bị nguồn VCI chặn IP nên một số tính năng không sử dụng được.
