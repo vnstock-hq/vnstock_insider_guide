@@ -1,0 +1,1 @@
+Các file trong thư mục này thuộc về cách thức cài đặt bộ thư viện Vnstock và xác thực với Github. Để sử dụng phương thức xác thực với API Vnstock mới nhất, vui lòng truy cập [trung tâm hướng dẫn](https://vnstocks.com/onboard-member)
